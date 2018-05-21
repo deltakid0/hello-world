@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+input[type=text].urlbar{
+    width: 100%;
+    font-size: 20px;
+    background-color: black;
+    color:white;
+}
+
+.postData{
+    background-color: black;
+    color:white;
+    width:100%;
+}
+
+#response{
+    overflow: auto;
+}
+
+#loader{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+table, td, tr, th{
+    border-collapse: collapse;
+    border: 1px solid green;
+}
+
+pre{
+    margin: 0;
+}
+
+td, th{
+    padding: 5px;
+    cursor: default;
+    vertical-align: top;
+}
+
+.gvRowNum{
+    background: darkolivegreen;
+    font-weight: bold;
+}
+
+.jprop{
+    color: fuchsia;
+}
+
+.jdata{
+    color: red;
+}
+
+.tbody{
+    width:100%;
+}
+
+.tbody td{
+    width:50%;
+}

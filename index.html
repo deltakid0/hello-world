@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <script type="text/javascript" src="Funciones.js"></script>
+    <title>REST</title>
+</head>
+
+<body>
+    <input type="text" id="url" onkeyup="if(event.keyCode === 13)App.Get()" spellcheck="false" class="urlbar">
+    <br><br>
+    <span>Payload
+    </span>
+    <table class="tbody">
+        <tr>
+            <td>
+                <textarea rows="10" spellcheck="false" class="postData" id="postData"></textarea>
+            </td>
+            <td>
+                Espacio para localStorage
+                <div id="divCount"></div>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <br>
+    <input type="button" value="POST" onclick="App.Post()">
+    <input type="button" value="HEAD" onclick="App.Head()">
+    <br>
+    <br>
+    <div id="response"></div>
+    <div id="loader">Loading...</div>
+</body>
+
+</html>
